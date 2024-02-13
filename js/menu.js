@@ -21,7 +21,7 @@ async function loadMenu() {
   });
 }
 
-function btnsIniAndCar() {
+async function btnsIniAndCar() {
   const btnsBottom = document.getElementById("btn-home");
   btnsBottom.innerHTML = `   
       <a href="https://wiston-g.github.io/RacingBurger/">
