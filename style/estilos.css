@@ -15,11 +15,16 @@ body{
 .menu{
     background-color: rgb(182, 212, 47);
 }
-.card-products{
+.card-product{
+    border-left: rgba(144, 143, 142, 0.3) solid 3px !important;
+    border-bottom: rgba(144, 143, 142, 0.2) solid 3px !important;
+}
+
+.card-products-text{
     font-size: 100%;
     color: #212020;
     align-items: center;
-    background-color: #F6F6F6;
+    border: #212020 solid 1.px;
 }
 
 .negro{

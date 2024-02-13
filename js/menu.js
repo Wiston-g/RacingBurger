@@ -14,10 +14,10 @@ async function loadMenu() {
     console.log("Categoria:", categoyProducts[clave].category);
     console.log("Imagen:", categoyProducts[clave].image);
     menucard.innerHTML += `<a href="${categoyProducts[clave].url}" class="col">
-    <div class="card card-products">
+    <div class="card bg-light card-product ">
         <img src="${categoyProducts[clave].image}" class="card-img-top" alt="...">
-        <div class="card-body text-dark bg-warning">
-            <h2 class="card-products bg-warning">${categoyProducts[clave].category}</h2>
+        <div class="card-body card-products-text text-dark bg-warning">
+            <h2 class="card-products-text bg-warning">${categoyProducts[clave].category}</h2>
         </div>
     </div>
   </a>    `;
