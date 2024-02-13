@@ -4,35 +4,7 @@ export async function eventsDom() {
   // Obtener la URL actual
   let currentUrl = window.location.href;
 
-  const tablaPicaranch = document.getElementById("bodyTablePicaranch");
-
-  const tablaSalchipapa = document.getElementById("bodyTableSalchipapa");
-
-  const tablaSalchipapaCrispy = document.getElementById(
-    "bodyTableSalchipapaCrispy"
-  );
-
-  const tablaHamburguesa = document.getElementById("bodyTableHamburguesa");
-
-  const tablaperro = document.getElementById("bodyTablePerros");
-
-  const tablaChoriqueta = document.getElementById("bodyTableChoriqueta");
-
-  const tablaBurritos = document.getElementById("bodyTableBurritos");
-
-  const tablaPincho = document.getElementById("bodyTablePincho");
-
-  const tablaPromociones = document.getElementById("bodyTablePromociones");
-
-  const tablaPostre = document.getElementById("bodyTablePostres");
-
-  const tablaAcompañamiento = document.getElementById(
-    "bodyTableAcompañamiento"
-  );
-
-  const tablaAdicionales = document.getElementById("bodyTableAdicionales");
-
-  const tablaBebidas = document.getElementById("bodyTableBebidas");
+  const tabla = document.getElementById("bodyTable");
 
   const bodyModal = document.getElementById("exampleModal");
 
@@ -88,33 +60,33 @@ export async function eventsDom() {
    * Todo:Lógica condicional basada en la URL
    */
   if (currentUrl.includes("lasagna.html")) {
-    await imprimir(products.lasagna, tablaPicaranch);
+    await imprimir(products.lasagna, tabla);
   } else if (currentUrl.includes("panzerotti.html")) {
-    await imprimir(products.panzerotti, tablaSalchipapa);
+    await imprimir(products.panzerotti, tabla);
   } else if (currentUrl.includes("arepas.html")) {
-    await imprimir(products.arepas, tablaSalchipapaCrispy);
-  } else if (currentUrl.includes("clubHouse.html")) {
-    await imprimir(products.clubHouse, tablaChoriqueta);
+    await imprimir(products.arepas, tabla);
+  } else if (currentUrl.includes("club-house.html")) {
+    await imprimir(products.clubHouse, tabla);
   } else if (currentUrl.includes("patacon.html")) {
-    await imprimir(products.patacon, tablaBurritos);
-  } else if (currentUrl.includes("picadaMixta.html")) {
-    await imprimir(products.picadaMixta, tablaPincho);
+    await imprimir(products.patacon, tabla);
+  } else if (currentUrl.includes("picada-mixta.html")) {
+    await imprimir(products.picadaMixta, tabla);
   } else if (currentUrl.includes("platosACarta.html")) {
-    await imprimir(products.platosACarta, tablaPromociones);
+    await imprimir(products.platosACarta, tabla);
   } else if (currentUrl.includes("bebidas.html")) {
-    await imprimir(products.bebidas, tablaBebidas);
+    await imprimir(products.bebidas, tabla);
   } else if (currentUrl.includes("hamburguesa.html")) {
-    await imprimir(products.hamburguesas, tablaHamburguesa);
+    await imprimir(products.hamburguesas, tabla);
   } else if (currentUrl.includes("perro.html")) {
-    await imprimir(products.perros, tablaperro);
+    await imprimir(products.perros, tabla);
   } else if (currentUrl.includes("pepitos.html")) {
-    await imprimir(products.pepitos, tablaChoriqueta);
+    await imprimir(products.pepitos, tabla);
   } else if (currentUrl.includes("salchipapas.html")) {
-    await imprimir(products.salchipapas, tablaBurritos);
-  } else if (currentUrl.includes("mazorcada.html")) {
-    await imprimir(products.mazorcada, tablaPincho);
-  } else if (currentUrl.includes("pizzas.html")) {
-    await imprimir(products.pizzas, tablaPromociones);
+    await imprimir(products.salchipapas, tabla);
+  } else if (currentUrl.includes("mazorca.html")) {
+    await imprimir(products.mazorcada, tabla);
+  } else if (currentUrl.includes("pizza.html")) {
+    await imprimir(products.pizzas, tabla);
   }
 
   function eventosDespuesDeCarga() {
@@ -348,7 +320,7 @@ export async function eventsDom() {
             .replace(/:/g, "%3A");
         };
         let url = "https://wa.me/";
-        let numeroCel = "+573202974075?text=";
+        let numeroCel = "+573017530981?text=";
         let encriptado = encriptacion(stringPedido);
         window.location.href = url + numeroCel + encriptado;
         console.log(encriptacion(stringPedido));

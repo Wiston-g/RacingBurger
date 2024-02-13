@@ -96,14 +96,13 @@ h3{
 }
 
 .card-product {
-    background-color: #212020;
-    border-right: 1px solid rgba(182, 212, 47, 0.2);
-    border-bottom: 1px solid rgba(182, 212, 47, 0.2);
+    background-color: rgb(244, 244, 244);
+    border-right: 1px solid rgba(182, 212, 47, 0.8);
+    border-bottom: 1px solid rgba(182, 212, 47, 0.8);
     text-align: center;
     justify-content: center;
 }
 
 .text-card-product{
-    color:aliceblue;
-    background-color: rgba(32, 32, 32, 0.2) !important;
+    color:black;
 }
