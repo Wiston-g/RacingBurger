@@ -71,7 +71,7 @@ export async function eventsDom() {
     await imprimir(products.patacon, tabla);
   } else if (currentUrl.includes("picada-mixta.html")) {
     await imprimir(products.picadaMixta, tabla);
-  } else if (currentUrl.includes("platosACarta.html")) {
+  } else if (currentUrl.includes("platos-a-carta.html")) {
     await imprimir(products.platosACarta, tabla);
   } else if (currentUrl.includes("bebidas.html")) {
     await imprimir(products.bebidas, tabla);
@@ -81,7 +81,7 @@ export async function eventsDom() {
     await imprimir(products.perros, tabla);
   } else if (currentUrl.includes("pepitos.html")) {
     await imprimir(products.pepitos, tabla);
-  } else if (currentUrl.includes("salchipapas.html")) {
+  } else if (currentUrl.includes("salchipapa.html")) {
     await imprimir(products.salchipapas, tabla);
   } else if (currentUrl.includes("mazorca.html")) {
     await imprimir(products.mazorcada, tabla);
