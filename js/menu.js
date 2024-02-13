@@ -2,6 +2,7 @@ import { categoyProducts } from "./categoryProducts.js";
 
 export const menu = document.addEventListener("DOMContentLoaded", function () {
   loadMenu();
+  btnsIniAndCar();
 });
 
 // Definición de la función a ser ejecutada
@@ -9,10 +10,6 @@ async function loadMenu() {
   const menucard = document.getElementById("menu");
 
   Object.keys(categoyProducts).forEach(function (clave) {
-    // Acceder al objeto interno usando la clave y mostrar sus propiedades
-    console.log("Clave:", clave);
-    console.log("Categoria:", categoyProducts[clave].category);
-    console.log("Imagen:", categoyProducts[clave].image);
     menucard.innerHTML += `<a href="${categoyProducts[clave].url}" class="col">
     <div class="card bg-light card-product ">
         <img src="${categoyProducts[clave].image}" class="card-img-top" alt="...">
@@ -22,4 +19,16 @@ async function loadMenu() {
     </div>
   </a>    `;
   });
+}
+
+function btnsIniAndCar() {
+  const btnsBottom = document.getElementById("btn-home");
+  btnsBottom.innerHTML = `   
+      <a href="https://wiston-g.github.io/RacingBurger/">
+        <button type="button" 
+            class="btn btn-warning btn-main rounded-circle btn-lg" 
+            id="btn-inicio">
+            <i class="bi bi-house"></i>
+        </button>  
+      </a>`;
 }
